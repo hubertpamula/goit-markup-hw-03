@@ -7,57 +7,52 @@
   --description-color: #757575;
   --button-colr: #f5f4fa;
 }
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--font-color);
-  margin: 0;
-  padding: 0;
-}
-ul {
-  list-style: none;
-}
-h1 {
-  width: 696px;
-  height: 120px;
-}
-.navigation {
-  width: 254px;
-  height: 16px;
-  margin-top: 32px;
-  margin-left: 93px;
-  display: flex;
-  justify-content: space-between;
-}
-.contacts-list {
-  display: flex;
-  margin-top: 32px;
-  margin-left: 371px;
-}
-.contacts-list li:first-child {
-  margin-right: 50px;
-}
-.container {
-  width: 1600px;
-  margin: auto;
-}
-.menu {
-  height: 80px;
-  display: flex;
-  background-color: var(--main-color);
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
-}
-.main-section {
-  background-color: var(--footer-color);
-  display: block;
-  text-align: center;
-  height: 600px;
-}
 
 .blue {
   color: var(--blue-color);
   text-decoration: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+}
+ul,
+h1 {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.navigation {
+  justify-content: space-between;
+  gap: 46px;
+  margin-left: 93px;
+  margin-right: 371px;
+}
+.head-wrapper {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid black;
+}
+.seciton-wrapper {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: var(--footer-color);
+}
+
+.contacts-list {
+  justify-content: space-between;
+  gap: 50px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 .logo {
   font-family: Raleway;
   font-size: 26px;
@@ -67,8 +62,6 @@ h1 {
   text-align: left;
   text-decoration: none;
   color: var(--logo-color);
-  margin-left: 145px;
-  margin-top: 24px;
 }
 
 .navi {
@@ -104,77 +97,15 @@ h1 {
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  padding-top: 200px;
-  padding-left: 452px;
+  display: block;
   color: var(--main-color);
-  margin-top: 0;
 }
-.photo-list {
-  display: flex;
-  justify-content: center;
-}
-.photo-list li {
-  margin-right: 30px;
-  margin-bottom: 94px;
-}
-.photo-list li:last-child {
-  margin-right: 0px;
-}
+
 .second-header {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  text-align: center;
-  margin-bottom: 50px;
-  margin-left: 50px;
-}
-.team {
-  height: 648px;
-  background-color: var(--button-colr);
-}
-.team .second-header {
-  padding-top: 94px;
-  margin-bottom: 0;
-  margin-left: 80px;
-}
-.photo-des {
-  text-align: center;
-}
-.workers-photos {
-  display: flex;
-  width: 1170px;
-  height: 368px;
-}
-.photo {
-  width: 270px;
-  height: 368px;
-  margin-left: 0;
-  margin-right: 30px;
-  background-color: var(--main-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.workers-photos li:first-child {
-  margin-left: 215px;
-}
-.inner {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 215px;
-}
-.photo-des-web2 {
-  margin-left: 24px;
-  margin-bottom: 20px;
-}
-.photo-web2 {
-  margin: 0;
-  padding: 0;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
 }
 
 .worker-name {
@@ -190,18 +121,10 @@ h1 {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--description-color);
-  margin-bottom: 30px;
 }
-.buttons-list {
-  display: flex;
-}
-.wrapper {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
+
 .main-button {
-  width: 200px;
-  height: 50px;
+  margin-top: 30px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -209,17 +132,17 @@ h1 {
   text-align: center;
   background-color: var(--blue-color);
   color: var(--main-color);
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-style: none;
+  border: none;
 }
 
 .main-button:hover {
   cursor: pointer;
 }
-.buttons-list {
-  margin-left: 510px;
-  margin-bottom: 50px;
-}
+
 .buttons {
   font-size: 16px;
   font-weight: 500;
@@ -228,32 +151,14 @@ h1 {
   text-align: center;
   background-color: var(--button-colr);
   cursor: pointer;
-  border-radius: 4px;
-  border-style: none;
-  padding: 6px 22px;
-  margin-right: 8px;
-  color: var(--font-color);
 }
+
 .buttons:hover {
   background-color: var(--blue-color);
   color: var(--main-color);
   cursor: pointer;
 }
-.lorem-list {
-  display: flex;
-  width: 1170px;
-  height: 101px;
-  margin-top: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
-  margin-bottom: 94px;
-}
-.lorem-list li {
-  margin-right: 30px;
-}
-.lorem-list li:last-child {
-  margin-right: 0px;
-}
+
 .list-header {
   font-size: 14px;
   font-weight: 700;
@@ -280,16 +185,13 @@ h1 {
 }
 
 .side-description {
-  font-family: "Roboto";
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   text-align: left;
-  color: var(--description-color);
 }
 
 .footer-logo {
-  display: inline-block;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -298,8 +200,6 @@ h1 {
   text-align: left;
   text-decoration: none;
   color: var(--main-color);
-  margin-left: 215px;
-  margin-top: 60px;
 }
 
 .footer-contacts {
@@ -311,13 +211,6 @@ h1 {
   color: var(--main-color);
   opacity: 60%;
 }
-.footer-list {
-  padding: 0;
-  margin-left: 215px;
-}
-.footer-list li {
-  margin-top: 9px;
-}
 .footer-address {
   font-size: 14px;
   line-height: 1.71;
@@ -325,8 +218,6 @@ h1 {
   text-align: left;
   text-decoration: none;
   color: var(--main-color);
-  margin-top: 20px;
-  margin-left: 215px;
 }
 
 .footer-contacts:hover {
@@ -334,6 +225,4 @@ h1 {
 }
 footer {
   background-color: var(--footer-color);
-  width: 1600px;
-  height: 252px;
 }

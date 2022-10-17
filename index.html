@@ -10,23 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
   <body>
-    <div class="container">
-      <header class="menu">
-        <a class="logo" href="index.html"
-          ><span class="blue">Web</span>Studio</a
-        >
+    <header>
+      <div class="container head-wrapper">
+        <a class="logo" href="#"><span class="blue">Web</span>Studio</a>
         <nav>
           <ul class="navigation">
-            <li><a class="navi" href="index.html">Agencja</a></li>
+            <li><a class="navi, blue" href="index.html">Agencja</a></li>
             <li><a class="navi" href="portfolio.html">Portfolio</a></li>
             <li><a class="navi" href="">Kontakt</a></li>
           </ul>
@@ -34,21 +27,27 @@
         <ul class="contacts-list">
           <li>
             <a class="contacts" href="mailto:info@example.com"
-              >info@example.com</a
+              >info@devstudio.com</a
             >
           </li>
           <li>
             <a class="contacts" href="tel:+48-111-111-111">+48 111 111 111</a>
           </li>
         </ul>
-      </header>
-      <main>
-        <section class="main-section">
-          <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="seciton-wrapper">
+          <h1 class="main-header">
+            EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU
+          </h1>
           <input class="main-button" type="button" value="Zamów usługe" />
+        </div>
         </section>
+        <div class="container">
         <section>
-          <ul class="lorem-list">
+          <ul>
             <li>
               <h3 class="list-header">LOREM IPSUM</h3>
               <p class="list-description">
@@ -79,9 +78,11 @@
             </li>
           </ul>
         </section>
+      </div>
+      <div class="container">
         <section>
-          <h2 class="second-header">Czym się zajmujemy</h2>
-          <ul class="photo-list">
+          <h2 class="second-header">Czym się zajmujemy</h2>
+          <ul>
             <li>
               <img
                 src="./images/type.jpg"
@@ -108,60 +109,60 @@
             </li>
           </ul>
         </section>
-        <section class="team">
+        <section>
           <h2 class="second-header">Nasz zespół</h2>
-          <ul class="workers-photos">
+          <ul>
             <li>
-              <figure class="photo">
+              <figure>
                 <img
                   src="./images/photo1.jpg"
                   alt="uśmiechnięty pracownik"
                   width="270"
                   height="260"
                 />
-                <figcaption class="photo-des">
+                <figcaption>
                   <h4 class="worker-name">John Doe</h4>
                   <span class="worker-description">Product Designer</span>
                 </figcaption>
               </figure>
             </li>
             <li>
-              <figure class="photo">
+              <figure>
                 <img
                   src="./images/photo2.jpg"
                   alt="uśmiechnięta pracownica"
                   width="270"
                   height="260"
                 />
-                <figcaption class="photo-des">
+                <figcaption>
                   <h4 class="worker-name">John Doe</h4>
                   <span class="worker-description">Frontend Developer</span>
                 </figcaption>
               </figure>
             </li>
             <li>
-              <figure class="photo">
+              <figure>
                 <img
                   src="./images/photo3.jpg"
                   alt="uśmiechnięty pracownik"
                   width="270"
                   height="260"
                 />
-                <figcaption class="photo-des">
+                <figcaption>
                   <h4 class="worker-name">John Doe</h4>
                   <span class="worker-description">Marketing</span>
                 </figcaption>
               </figure>
             </li>
             <li>
-              <figure class="photo">
+              <figure>
                 <img
                   src="./images/photo4.jpg"
                   alt="uśmiechnięty pracownik"
                   width="270"
                   height="260"
                 />
-                <figcaption class="photo-des">
+                <figcaption>
                   <h4 class="worker-name">John Doe</h4>
                   <span class="worker-description">UI Designer</span>
                 </figcaption>
@@ -169,13 +170,15 @@
             </li>
           </ul>
         </section>
-      </main>
-      <footer>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
         <a class="footer-logo" href="#"><span class="blue">Web</span>Studio</a>
         <address class="footer-address">
           m. Warszawa, Aleje Jerozolimskie 21
         </address>
-        <ul class="footer-list">
+        <ul>
           <li>
             <a class="footer-contacts" href="mailto:info@example.com"
               >info@example.com</a
@@ -187,7 +190,7 @@
             >
           </li>
         </ul>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -41,7 +41,6 @@ h1 {
   margin: auto;
 }
 .menu {
-  width: 1600px;
   height: 80px;
   display: flex;
   background-color: var(--main-color);
@@ -51,7 +50,6 @@ h1 {
   background-color: var(--footer-color);
   display: block;
   text-align: center;
-  width: 1600px;
   height: 600px;
 }
 
@@ -132,7 +130,6 @@ h1 {
   margin-left: 50px;
 }
 .team {
-  width: 1600px;
   height: 648px;
   background-color: var(--button-colr);
 }
